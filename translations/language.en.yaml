@@ -1,0 +1,15 @@
+invoice: Invoice
+invoice_date: Invoice date
+invoice_number: Invoice no
+client_vat_registered_number: Your VAT number
+client_id: Client id
+description: Description
+amount: Amount
+price: Price
+total_price: Total amount
+subtotal: Subtotal
+vat_label: '+ VAT {0}%'
+total: Total
+payment_info: 'May we ask you to transfer the balance of {0} to account number {1} (BIC: {2}) with reference {3} within a period of {4} days from the invoice date.'
+terms_info: 'General terms and conditions apply on the reverse side.'
+page: 'Page'

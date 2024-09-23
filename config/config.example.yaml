@@ -1,0 +1,26 @@
+pdf:
+  # logo: logo.jpg # Optional logo path
+  cell_width: 40 # Default cell width
+  cell_height: 5 # Default cell height
+  font: courier # Font
+  language: en # Render language, found in translations/language.[language].yaml
+  locale: 'en_US' # Locale render, used for currency convertion
+
+company:
+  name: 'Company name'
+  address: 'Address'
+  postal_code: 'Postal code'
+  city: City
+  country: Country
+  vat_registered_number: 'Your registered VAT number'
+  email: 'john@doe.com'
+  phone_1: 'number 1'
+  # phone_2: 'number 2'
+
+payment_details:
+  bank_name: 'Bank name'
+  bank_iban: 'Bank account'
+  bank_bic: 'Bank bic'
+  invoice_due_date: 'number of days'
+  invoice_prefix: 'invoice prefix'
+  vat: 25

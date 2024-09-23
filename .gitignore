@@ -1,0 +1,7 @@
+ __pycache__/
+ assets/
+ config/
+ !config/config.yaml
+ !config/iterator.yaml
+ translations/terms*
+ !translations/terms.example.yaml

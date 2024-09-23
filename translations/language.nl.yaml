@@ -1,0 +1,15 @@
+invoice: Factuur
+invoice_date: Factuurdatum
+invoice_number: Factuurnummer
+client_vat_registered_number: Uw BTW nummer
+client_id: Klantnummer
+description: Omschrijving
+amount: Aantal
+price: Prijs
+total_price: Bedrag
+subtotal: Subtotaal
+vat_label: '+ BTW {0}%'
+total: Totaal
+payment_info: 'Mogen wij u vragen het saldo van {0} over te maken op rekeningnummer {1} (BIC: {2}) met vermelding van {3} binnen een termijn van {4} dagen te rekenen vanaf factuurdatum.'
+terms_info: 'Algemene voorwaarden van toepassing op achterzijde.'
+page: 'Pagina'
