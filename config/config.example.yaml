@@ -24,3 +24,5 @@ payment_details:
   invoice_due_date: 'number of days'
   invoice_prefix: 'invoice prefix'
   vat: 25
+
+date_format: '%d %B %Y'
