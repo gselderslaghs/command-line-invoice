@@ -1,8 +1,8 @@
 invoice: Invoice
 invoice_date: Invoice date
 invoice_number: Invoice no
-client_vat_registered_number: Your VAT number
-client_id: Client id
+customer_vat_registered_number: Your VAT number
+customer_id: Client id
 description: Description
 amount: Amount
 price: Price

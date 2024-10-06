@@ -25,4 +25,5 @@ payment_details:
   invoice_prefix: 'invoice prefix'
   vat: 25
 
-date_format: '%d %B %Y'
+date_format: '%B, %d %Y'
+translations_path: translations/

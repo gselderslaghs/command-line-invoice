@@ -4,9 +4,8 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-pyyaml = "6.0.2"
-fpdf2 = "2.7.9"
 click = "8.1.7"
+pdf-invoice-util = ">=0.0.1"
 
 [dev-packages]
 

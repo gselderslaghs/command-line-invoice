@@ -1,9 +1,8 @@
 import click
 from datetime import datetime
+from pdf_invoice_util import Config, Invoice, InvoicePDF
 
-from config import config
-from invoice import Invoice
-from invoice_pdf import InvoicePDF
+config = Config()
 
 
 @click.group(chain=True)
@@ -19,20 +18,20 @@ def cli():
 @click.option('--customer-postal_code', prompt=True, type=int)
 @click.option('--customer-city', prompt=True, type=str)
 @click.option('--customer-country', prompt=True, type=str)
+@click.option('--invoice-id', prompt=True, type=int)
 @click.option('--invoice-date', prompt=True, type=str, default=datetime.now().strftime('%Y-%m-%d'))
 @click.option('--customer-vat-registered-number', prompt=True, type=str)
-@click.option('--vat-percentage', prompt=True, type=int, default=config['payment_details']['vat'])
-@click.option('--invoice-language', prompt=True, type=click.Choice(['en', 'nl']), default=config['pdf']['language'])
+@click.option('--vat-percentage', prompt=True, type=int, default=config.load()['payment_details']['vat'])
+@click.option('--invoice-language', prompt=True, type=click.Choice(['en', 'nl']),
+              default=config.load()['pdf']['language'])
 def generate_invoice(customer_id, customer_name, customer_address, customer_postal_code, customer_city,
-                     customer_country,
-                     invoice_date, customer_vat_registered_number, vat_percentage, invoice_language):
-    invoice = Invoice(invoice_date, customer_id, customer_name, customer_address, customer_postal_code, customer_city,
-                      customer_country,
-                      customer_vat_registered_number, vat_percentage)
+                     customer_country, invoice_id, invoice_date, customer_vat_registered_number, vat_percentage,
+                     invoice_language):
+    invoice = Invoice(invoice_id, invoice_date, customer_id, customer_name, customer_address, customer_postal_code,
+                      customer_city, customer_country, customer_vat_registered_number, vat_percentage)
     invoice.set_articles(generate_invoice_lines())
     pdf = InvoicePDF(invoice, invoice_language)
     pdf.generate_document()
-    invoice.increment_iterator()
 
 
 def generate_invoice_line():

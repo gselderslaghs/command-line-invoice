@@ -1,8 +1,8 @@
 invoice: Factuur
 invoice_date: Factuurdatum
 invoice_number: Factuurnummer
-client_vat_registered_number: Uw BTW nummer
-client_id: Klantnummer
+customer_vat_registered_number: Uw BTW nummer
+customer_id: Klantnummer
 description: Omschrijving
 amount: Aantal
 price: Prijs

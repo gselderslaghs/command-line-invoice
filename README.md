@@ -2,16 +2,16 @@
 Simple invoice generation tool in Python
 
 ## Prerequisites
-A working local Python (3.9+) environment
+A working local Python (3.8+) environment
 
 ## Setup
-Copy config/config.example.yaml to config/config.yaml and update parameter values as desired. Copy config/iterator.example.yaml to config/iterator.yaml
+1. Copy config/config.example.yaml to config/config.yaml and update parameter values as desired
+2. Optionally configure terms by creating a translations/terms.[language].yaml file, check out the example file
 
-Optionally configure terms by creating a translations/terms.[language].yaml file, check out the example file
-
-## Translations & contribution
-Feel free to make proposals for code contributions and the addition of translation files
+## Usage
+1. Clone repository
+2. Install dependencies with ```pipenv install```
+3. Run ```python index.py generate-invoice```, fill in the prompt
 
 ## Credits
-
-Big thanks to Pluralsight (https://www.pluralsight.com) and Chart Explorers (https://www.youtube.com/@ChartExplorers) for the detailed descriptions on working with the used techniques
+Big thanks to Pluralsight (https://www.pluralsight.com)  for the detailed descriptions on working with the used techniques
