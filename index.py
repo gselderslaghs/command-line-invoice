@@ -53,7 +53,9 @@ def generate_invoice_line():
         if (validate_input(amount, 'int', True)):
             break
         continue
-    return {'title': title, 'amount': int(amount), 'price': float(price)}
+
+    description = input('Description\n')
+    return {'title': title, 'amount': int(amount), 'price': float(price), 'description': description}
 
 
 def generate_invoice_lines():
