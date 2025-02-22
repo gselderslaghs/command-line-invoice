@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 click = "8.1.7"
-pdf-invoice-util = ">=0.0.1"
+pdf-invoice-util = ">=0.0.4"
 
 [dev-packages]
 
